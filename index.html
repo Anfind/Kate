@@ -19,9 +19,9 @@
         .scrolling-text {
             position: absolute;
             white-space: nowrap;
-            font-size: 20px; /* Đặt kích thước font */
+            font-size: 21px; /* Đặt kích thước font */
             font-family: 'Rouge Script', cursive; /* Đổi font chữ thành Dancing Script */
-            color: rgb(238, 63, 194); /* Đổi màu chữ thành màu trắng */
+            color: rgb(217, 24, 24); /* Đổi màu chữ thành màu trắng */
             animation: scroll linear infinite, float 3s ease-in-out infinite; /* Thêm hiệu ứng bồng bềnh */
         }
 
@@ -106,7 +106,7 @@
 <body>
     <!-- Thay đổi để phát nhạc khi nhấp chuột -->
     <audio id="background-music" loop>
-        <source src="HappyBirthdayPianoVersion-Instrumen_yknt.mp3" type="audio/mpeg">
+        <source src="Ed-Sheeran-Photograph-1.mp3" type="audio/mpeg">
         Trình duyệt của bạn không hỗ trợ thẻ âm thanh.
     </audio>
 
@@ -325,7 +325,7 @@
                 }
                 context.closePath();
                 // create the fill
-                context.fillStyle = '#ea80b0';
+                context.fillStyle = '#d91818';
                 context.fill();
                 // create the image
                 var image = new Image();
@@ -419,7 +419,7 @@
         const numberOfTexts = 30; // Giảm số lượng dòng chữ
         for (let i = 0; i < numberOfTexts; i++) {
             const text = texts[Math.floor(Math.random() * texts.length)];
-            const duration = Math.random() * 10 + 10; // Tăng thời gian cuộn từ 20 đến 40 giây
+            const duration = Math.random() * 17 + 17; // Tăng thời gian cuộn từ 20 đến 40 giây
             const left = Math.random() * 100; // Vị trí ngẫu nhiên từ 0 đến 100% chiều rộng trang
             createScrollingText(text, duration, left);
         }
